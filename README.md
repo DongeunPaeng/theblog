@@ -54,4 +54,16 @@ All the sources I refer to will be on my 'da Vinci' page.
 
 - [x] Give className to span tag in the navigation.js
 - [x] Wrap ul tag with div tag
-- [x] npm install antd @quasar/extras
+- [x] npm install @quasar/extras
+- [x] Import quasar files to index.js
+  - The base tutorial installs and uses antd to make Avatar, but in my case, I don't need it.
+- [x] Change span to .menu-title in \_navigation.scss
+- [x] Give className to div tag in the navigation.js
+- [x] Give styles to menu-content-container class in the \_navigarion.scss
+- [x] Make \$background variable insdie \_variables.scss
+- [x] Make hamburger icon inside the div in navigation.js
+- [x] Add onClick event handler to the icon
+- [x] Import useState from react into the navigation.js
+- [x] Make array with menuActive and setMenuActive with useState(false)
+  - What does this do?
+- [x] Add styles to the icon and hide it

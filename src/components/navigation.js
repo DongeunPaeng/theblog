@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const navLinks = [
@@ -13,10 +13,12 @@ const navLinks = [
 ];
 
 export default function Navigation() {
+  const [menuActive, setMenuActive] = useState(false);
+
   return (
     <nav className="site-navigation">
       <span className="menu-title">Dongeun's Blog</span>
-      <div>
+      <div className="menu-content-container">
         <ul>
           {navLinks.map((link, index) => (
             <li key={index}>
@@ -24,6 +26,10 @@ export default function Navigation() {
             </li>
           ))}
         </ul>
+        <i
+          className="ionicons icon ion-ios-menu"
+          onClick={() => setMenuActive(!menuActive)}
+        />
       </div>
     </nav>
   );
