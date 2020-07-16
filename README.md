@@ -49,3 +49,9 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] Import PageRenderer function to App.js
 - [x] Make 'pages' directory inside src folder
 - [x] Make each page.js inside pages folder that returns simple div tags
+
+##### 2020. 07. 16.
+
+- [x] Give className to span tag in the navigation.js
+- [x] Wrap ul tag with div tag
+- [x] npm install antd @quasar/extras
