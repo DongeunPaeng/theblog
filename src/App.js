@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" render={() => <Redirect to="/home" />} />
           <Route component={() => 404} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

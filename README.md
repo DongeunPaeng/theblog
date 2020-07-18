@@ -65,5 +65,51 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] Add onClick event handler to the icon
 - [x] Import useState from react into the navigation.js
 - [x] Make array with menuActive and setMenuActive with useState(false)
-  - What does this do?
+  - learn useState at https://www.youtube.com/watch?v=mXWEELlAzKg&feature=youtu.be
 - [x] Add styles to the icon and hide it
+- [x] Add media query to \_navigation.scss
+
+##### 2020. 07. 18.
+
+- [x] Make menu-content-container to JSX to add 'active' class conditionally via "short-circuit evaluation"
+- [x] Style further menu-content-container
+- [x] Move out the icon out of the menu-content-container div both in the navigation.js and the \_nagivation.scss
+  - All this customization can be referred to 'https://www.youtube.com/watch?v=u3GX39CFUEY&list=PL7NAk9A3ueyXGX00zl7FzuaCAQhQTFPxJ&index=2'
+- [x] Add `padding-left: 30px` to ul, not the menu-content-container as in the tutorial; it prevents the side menu to hide perfectly
+- [ ] Make side nav bar to hide when users click outside the side menu or when they click any of the 'li'
+- [x] npm install moment
+- [x] Change the div tag to a section tag in home.js and give the tag a className 'container home'
+- [x] Bring some container styles from bootstrap directly to base.scss
+- [x] Add footer
+- [x] Make post-masonry.js inside src > components > common directory
+- [x] Make "row" div in the section tag in home.js, and make h1 tag and PostMasonry component inside the div tag
+- [x] Import PostMasonry and trending into home.js
+- [x] Make PostMasonry function inside post-masonry.js and add style of gridTemplateColumns using given arguments - posts, columns, and tagsOnTop
+- [x] Make featured.js and trending.js in src > assets > mocks directory
+- [x] Make masonry-post.js in the common directory
+- [x] Make index.js which imports masonry-post and post-masonry and exports them in {MasonryPost, PostMasonry}
+- [x] Make funciton MasonryPost inside the masonry-post.js that returns simple div tags with 'test' html inside
+- [x] Make \_home.scss, \_masonry-post.scss, and \_post-masonry.scss and import all these files to base.scss
+- [x] Modify MasonryPost function to render clickable posts
+- [x] Add styles to \_home.scss, \_masonry-post.scss, and \_post-masonry.scss
+- [ ] Understand how the overlay style was constrained to each post by adding `position: relative` to .masonry-post
+- [x] Add span tag in the MasonryPost function to show dates of the post
+- [x] Import categoryColors from styles.js in common folder, and make styles.js inside the common folder
+- [x] Make trendingConfig that has gridArea, and make mergeStyles function to add the configuration to each post
+- [x] Apply the configurated styles to each post in masonry-post.js
+- [x] Add styles to .image-text, .image-title, .image-date, .tags-container, div
+- [x] Make featured posts area in a similar way as 'trending posts' but add tagsOnTop props to its PostMasonry component
+- [x] Understand what 'tagsOnTop' does here
+- [ ] Understand what 'display: flex' did to the featured posts container
+- [x] Add media query to scss files in order to make the posts cards responsive
+- [x] Make inline styles conditional to make posts find their spots according to the screen size
+- [x] Add inline style to 'image-text' to make the texts go to the bottom of the post
+- [ ] Beautify the posts based on Pinterest references (not now)
+- [x] Make `recentPosts` in home.js to make pagination
+- [x] Make post-grid.js in the common directory
+- [x] Import React, { useState, useMenu, useEffect }, { Link }, { Pagination } respectively from react, react-router-dom, and antd
+- [x] npm install antd
+- [x] Import PostGrid to index.js and home.js
+- [x] Make PostGrid function
+- [x] Edit home.js to make trending section has its own section tags
+- [ ] Fix antd pagination to apply its own css
