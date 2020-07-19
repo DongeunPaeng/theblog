@@ -1,0 +1,11 @@
+{
+  "name": "theblog-backend",
+  "version": "1.0.0",
+  "description": "Koa and GraphQL backend for React project",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Dongeun Paeng",
+  "license": "ISC"
+}

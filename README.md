@@ -77,6 +77,7 @@ All the sources I refer to will be on my 'da Vinci' page.
   - All this customization can be referred to 'https://www.youtube.com/watch?v=u3GX39CFUEY&list=PL7NAk9A3ueyXGX00zl7FzuaCAQhQTFPxJ&index=2'
 - [x] Add `padding-left: 30px` to ul, not the menu-content-container as in the tutorial; it prevents the side menu to hide perfectly
 - [ ] Make side nav bar to hide when users click outside the side menu or when they click any of the 'li'
+  - I can refer to academind's video at 
 - [x] npm install moment
 - [x] Change the div tag to a section tag in home.js and give the tag a className 'container home'
 - [x] Bring some container styles from bootstrap directly to base.scss
@@ -107,12 +108,39 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [ ] Beautify the posts based on Pinterest references (not now)
 - [x] Make `recentPosts` in home.js to make pagination
 - [x] Make post-grid.js in the common directory
-- [x] Import React, { useState, useMenu, useEffect }, { Link }, { Pagination } respectively from react, react-router-dom, and antd
+- [x] Import React, { useState, useMemo, useEffect }, { Link }, { Pagination } respectively from react, react-router-dom, and antd
 - [x] npm install antd
 - [x] Import PostGrid to index.js and home.js
 - [x] Make PostGrid function
 - [x] Edit home.js to make trending section has its own section tags
 
 ##### 2020. 07. 19.
-- [ ] Fix antd pagination to apply its own css
-- [ ] Import 'antd' into the index.js
+- [x] Fix antd pagination to apply its own css
+  - If you see 'user-agent-stylesheet' overriding your intended external design, check if you imported the design properly
+- [x] Import 'antd' into the index.js
+- [x] Add useMemo to post-grid.js
+- [ ] Understand what useMemo is, how to use it, and when to use it
+- [x] Add paginatedPosts inside a section in post-grid.js and map it to make Link tag for each post
+  - There are current, pageSize, posts in the square bracket in the second parameter of the useMemo
+- [x] Move 'tags-container' div from masonry-post.js to tag-row.js that has been newly made and imported to masonry-post.js
+  - This is for making the tags-contianer a common component for multiple post sections
+- [x] Change ```post.categories``` to ```tags``` in TagRow function 
+- [x] Import and export TagRow to/from index.js
+- [x] Move styles for .tag-container from _masonry-post.scss to _tag-row.scss that is newly made
+- [x] Fill inside the section of PostGrid function with TagRow and post title, author, date, description, and the link
+- [x] Make navigation bar to stick to the top by adding ```position: fixed```, ```z-index: 100```, and ```top: 0```
+- [x] Change position of menu-content-container to ```fixed```
+- [x] Make _post-grid.scss
+- [ ] Understand what ```grid-template-columns: repeat(auto-full, minmax(275px, 1fr))```, ```grid-auto-rows: 1fr``` means
+- [x] Import _post-grid.scss into base.scss
+- [x] Add styles to _post-grid.scss
+  - I particularly copied styles of image-text from _masonry-post.scss to h2 inside .post-container in the _post-grid.scss
+  - Unlike in the video, I applied 400, not 400px, to the font-weight of .description-text
+- [x] Add useEffect to post-grid.js in order to make it seamless when users click the pagination button
+- [x] Add some more styles to home.scss following the tutorial https://youtu.be/u0osiaRdI00?t=1502
+  - Here, I got rid of the padding: 1.5em added to h1 inside .home
+- [x] Wrap recent posts section with another section with className "bg-white"
+- [x] Start working on backend
+- [x] mkdir graphql
+- [x] cd graphql
+- [x] npm init

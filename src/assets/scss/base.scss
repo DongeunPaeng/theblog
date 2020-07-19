@@ -3,6 +3,8 @@
 @import "./post-masonry";
 @import "./masonry-post";
 @import "./home";
+@import "./tag-row";
+@import "./post-grid";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -43,7 +45,7 @@ h1 {
   height: 40px;
   line-height: 40px;
   width: 100%;
-  background-color: $background;
+  background-color: white;
   color: lightslategray;
   text-align: center;
 }

@@ -1,4 +1,6 @@
 .home {
+  padding: 2em 0;
+
   h1 {
     width: 100%;
     color: $text-color;
@@ -6,6 +8,10 @@
 
   .featured-posts-container {
     display: flex;
+  }
+
+  .bg-white {
+    background: white;
   }
 }
 

@@ -1,0 +1,37 @@
+.grid-pagination-container {
+  .ant-pagination {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 30px;
+  grid-auto-rows: 1fr;
+  padding-bottom: 50px;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+
+  .author-text {
+    color: $text-light;
+  }
+
+  .description-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-block-start: 0;
+    margin-block-end: 10px;
+    color: $text-color;
+    font-weight: 400;
+  }
+}
