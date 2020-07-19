@@ -169,3 +169,12 @@ All the sources I refer to will be on my 'da Vinci' page.
   - You should avoid having one-to-one relationship; rather, you're recommended to merge those tables
 - [x] npm install mysql2 knex dotenv
   - knex is a query builder for Javascript
+- [x] Make .env and .gitignore in qraphql directory
+- [x] Add /node_modules/ and .env to .gitignore
+- [x] Make database directory and make mysql.js inside the folder
+- [x] Require dotenv to mysql.js
+- [x] Set up basic connection in mysql.js and export the module with requiring 'knex'
+- [x] Make actions direcotry inside database folder
+- [x] Make db-connect.js inside actions folder
+- [x] Require knex from '../mysql' into the db-connect.js
+- [x] Set up basic knex.raw request and response
