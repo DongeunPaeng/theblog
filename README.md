@@ -159,3 +159,13 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] Make resolvers, query, schema in index.js
 - [x] Make post-schema.graphql inside posts folder and make schemas in it
 - [x] node app
+  - Before updating node version to 14, it didn't work
+- [ ] Fix starting position of the app; it starts from somewhere in the middle, not the top
+  - Check if the useEffect works everytime the page reloads; it shouldn't
+- [x] Install GraphQL Playground for Chrome extension and test if the backend works properly
+- [ ] Understand ERD(Entity Relationship Diagram) and cardinality rules when building database
+  - You should not have any many-to-many relationship
+    - When you encounter many-to-many relationship, you can make another table in order to make two separate one-to-many relationships
+  - You should avoid having one-to-one relationship; rather, you're recommended to merge those tables
+- [x] npm install mysql2 knex dotenv
+  - knex is a query builder for Javascript
