@@ -77,7 +77,7 @@ All the sources I refer to will be on my 'da Vinci' page.
   - All this customization can be referred to 'https://www.youtube.com/watch?v=u3GX39CFUEY&list=PL7NAk9A3ueyXGX00zl7FzuaCAQhQTFPxJ&index=2'
 - [x] Add `padding-left: 30px` to ul, not the menu-content-container as in the tutorial; it prevents the side menu to hide perfectly
 - [ ] Make side nav bar to hide when users click outside the side menu or when they click any of the 'li'
-  - I can refer to academind's video at 
+  - I can refer to academind's video at
 - [x] npm install moment
 - [x] Change the div tag to a section tag in home.js and give the tag a className 'container home'
 - [x] Bring some container styles from bootstrap directly to base.scss
@@ -115,6 +115,7 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] Edit home.js to make trending section has its own section tags
 
 ##### 2020. 07. 19.
+
 - [x] Fix antd pagination to apply its own css
   - If you see 'user-agent-stylesheet' overriding your intended external design, check if you imported the design properly
 - [x] Import 'antd' into the index.js
@@ -124,17 +125,17 @@ All the sources I refer to will be on my 'da Vinci' page.
   - There are current, pageSize, posts in the square bracket in the second parameter of the useMemo
 - [x] Move 'tags-container' div from masonry-post.js to tag-row.js that has been newly made and imported to masonry-post.js
   - This is for making the tags-contianer a common component for multiple post sections
-- [x] Change ```post.categories``` to ```tags``` in TagRow function 
+- [x] Change `post.categories` to `tags` in TagRow function
 - [x] Import and export TagRow to/from index.js
-- [x] Move styles for .tag-container from _masonry-post.scss to _tag-row.scss that is newly made
+- [x] Move styles for .tag-container from \_masonry-post.scss to \_tag-row.scss that is newly made
 - [x] Fill inside the section of PostGrid function with TagRow and post title, author, date, description, and the link
-- [x] Make navigation bar to stick to the top by adding ```position: fixed```, ```z-index: 100```, and ```top: 0```
-- [x] Change position of menu-content-container to ```fixed```
-- [x] Make _post-grid.scss
-- [ ] Understand what ```grid-template-columns: repeat(auto-full, minmax(275px, 1fr))```, ```grid-auto-rows: 1fr``` means
-- [x] Import _post-grid.scss into base.scss
-- [x] Add styles to _post-grid.scss
-  - I particularly copied styles of image-text from _masonry-post.scss to h2 inside .post-container in the _post-grid.scss
+- [x] Make navigation bar to stick to the top by adding `position: fixed`, `z-index: 100`, and `top: 0`
+- [x] Change position of menu-content-container to `fixed`
+- [x] Make \_post-grid.scss
+- [ ] Understand what `grid-template-columns: repeat(auto-full, minmax(275px, 1fr))`, `grid-auto-rows: 1fr` means
+- [x] Import \_post-grid.scss into base.scss
+- [x] Add styles to \_post-grid.scss
+  - I particularly copied styles of image-text from \_masonry-post.scss to h2 inside .post-container in the \_post-grid.scss
   - Unlike in the video, I applied 400, not 400px, to the font-weight of .description-text
 - [x] Add useEffect to post-grid.js in order to make it seamless when users click the pagination button
 - [x] Add some more styles to home.scss following the tutorial https://youtu.be/u0osiaRdI00?t=1502
@@ -144,3 +145,17 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] mkdir graphql
 - [x] cd graphql
 - [x] npm init
+- [x] npm install apollo-server-koa graphql-tools koa moment
+- [x] Make app.js
+- [x] Set up the server with Apollo, GraphQL, and Koa
+  - Watch tuts on GraphQL (why we need them, what's its competitor)
+  - Watch tuts on Koa (why we need them, what's its competitor)
+  - Watch tuts on Apollo (why we need them, what's its competitor)
+- [x] Make schemas directory and make index.js inside the folder
+- [x] Make posts directory inside schemas folder and make index.js inside the folder
+- [x] Copy mocks folder from client and paste the entire folder into the posts folder
+- [x] Change ES6 syntax in featured.js and trending.js to ES5 syntax
+- [x] Require trending, featured, fs, and path into the index.js file in the posts directory
+- [x] Make resolvers, query, schema in index.js
+- [x] Make post-schema.graphql inside posts folder and make schemas in it
+- [x] node app
