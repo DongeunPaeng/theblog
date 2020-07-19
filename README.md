@@ -178,3 +178,7 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] Make db-connect.js inside actions folder
 - [x] Require knex from '../mysql' into the db-connect.js
 - [x] Set up basic knex.raw request and response
+
+Next Step
+
+- [ ] Install and connect mysql
