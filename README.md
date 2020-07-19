@@ -112,4 +112,7 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] Import PostGrid to index.js and home.js
 - [x] Make PostGrid function
 - [x] Edit home.js to make trending section has its own section tags
+
+##### 2020. 07. 19.
 - [ ] Fix antd pagination to apply its own css
+- [ ] Import 'antd' into the index.js
