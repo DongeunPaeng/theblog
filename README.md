@@ -159,7 +159,7 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] Make resolvers, query, schema in index.js
 - [x] Make post-schema.graphql inside posts folder and make schemas in it
 - [x] node app
-  - Before updating node version to 14, it didn't work
+  - Before updating the node version to 14, it didn't work
 - [ ] Fix starting position of the app; it starts from somewhere in the middle, not the top
   - Check if the useEffect works everytime the page reloads; it shouldn't
 - [x] Install GraphQL Playground for Chrome extension and test if the backend works properly
@@ -179,6 +179,43 @@ All the sources I refer to will be on my 'da Vinci' page.
 - [x] Require knex from '../mysql' into the db-connect.js
 - [x] Set up basic knex.raw request and response
 
+##### 2020. 07. 25.
+
+- [x] Make create-migration.js inside actions folder
+- [x] Make try and catch to assign an object to tableName
+- [ ] Understand what `process.argv` does
+- [x] Declare fileName and make a function that writes sql files
+- [x] Make migrations directory in database folder
+- [x] Make scripts in package.json to run the create-migration.js
+- [x] npm run create-migration -- --tableName=roles
+  - The reason we put in two '--' in the scripts is that the '--' will be a delimiter
+  - When we make a table, the first table we make has to not have any dependencies
+- [x] npm run create-migration -- --tableName=users
+- [x] npm run create-migration -- --tableName=permissions
+- [x] Repeat the sql-making process and end it with seeds
+- [ ] Understand what seeds mean here
+- [x] Make run-migration.js in order to make scripts to run the sql
+- [x] Make ```node ./database/actions/run-migration.js` script in the package.json file
+- [x] Require knex from mysql into the run-migration.js
+- [x] npm install bluebird
+  - [ ] Understand why people use 'bluebird'; why it is necessary or better than other options
+- [x] Require promise from bluebird, path from knex, fs from fs
+- [x] Declare db = `knex.client.config.connection.database || null`
+  - [ ] Understand what this line means
+- [x] Make functions in run-migration.js
+- [ ] Understand exactly what role the `run-migrations.js` does running the sql files
+- [ ] Understand Promise and why the tutorial ends the function with `.then(resolve)`, not `.then((data) => resolve(data))`
+- [x] Fill inside the sql files with querys that make tables
+  - [ ] Understand what NOT EXISTS {} means when creating table in mysql
+  - [ ] Understand every line in .sql files regarding what it means and why it's needed
+- [x] Install mysql
+- [x] create database theblog;
+- [x] Connect mysql
+- [x] npm run run-migration
+  - [x] Fix syntax errors
+  - [x] Don't forget to put semi-colon(;) after every command
+  - [x] Check if there are unnecessary additions or omissions of comma(,)
+
 Next Step
 
-- [ ] Install and connect mysql
+- [ ] Collect IP addresses of blog post readers and send the information via slack bot or something else
