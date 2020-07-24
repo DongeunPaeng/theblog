@@ -28,17 +28,17 @@ VALUES
 ("Blog", "하는, 청춘이 심장의 하는 속잎나고, 대고, 거선의 사막이다."),
 ("Tech", "얼음열매를 곳으로 우리의 현저하게 돋고, 그리하였는가?");
 
-INSERT INTO blog_posts (author_id, title, text, keyword1, keyword2)
+INSERT INTO blog_posts (author_id, title, text, description, keyword1, keyword2)
 VALUES
-(1, "제목 1", "하는 이다.", "keyword1", "keyword2"),
-(1, "제목 2는 이것다", "하는없으면,", "keyword1", "keyword2"),
-(1, "제목 3", "힘아 봄바람이다.", "keyword1", "keyword2"),
-(1, "제목 4", "힘차게불어 무엇다.", "keyword1", "keyword2"),
-(1, "제목 5", "힘차게 평람이다.", "keyword1", "keyword2"),
-(1, "제목 6", "힘차게 평화스람이다.", "keyword1", "keyword2"),
-(1, "제목 7", "힘차게 평화스 다.", "keyword1", "keyword2"),
-(1, "제목 8", "힘차게 평화이다.", "keyword1", "keyword2"),
-(1, "제목 9는 이것", "힘차이다.", "keyword1", "keyword2");
+(1, "제목 1", "하는 이다.", "description은 이것이다", "keyword1", "keyword2"),
+(1, "제목 2는 이것다", "하는없으면,", "description은 이것이다", "keyword1", "keyword2"),
+(1, "제목 3", "힘아 봄바람이다.", "description은 이것이다", "keyword1", "keyword2"),
+(1, "제목 4", "힘차게불어 무엇다.", "description은 이것이다", "keyword1", "keyword2"),
+(1, "제목 5", "힘차게 평람이다.", "description은 이것이다", "keyword1", "keyword2"),
+(1, "제목 6", "힘차게 평화스람이다.", "description은 이것이다", "keyword1", "keyword2"),
+(1, "제목 7", "힘차게 평화스 다.", "description은 이것이다", "keyword1", "keyword2"),
+(1, "제목 8", "힘차게 평화이다.", "description은 이것이다", "keyword1", "keyword2"),
+(1, "제목 9는 이것", "힘차이다.", "description은 이것이다", "keyword1", "keyword2");
 
 INSERT INTO blog_post_comments (post_id, author_id, comment)
 VALUES

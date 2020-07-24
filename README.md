@@ -215,7 +215,18 @@ All the sources I refer to will be on my 'da Vinci' page.
   - [x] Fix syntax errors
   - [x] Don't forget to put semi-colon(;) after every command
   - [x] Check if there are unnecessary additions or omissions of comma(,)
+- [x] Create api directory inside graphql folder
+- [x] Create posts directory inside api folder
+- [x] Create utils.js inside api folder
+- [x] Make errorHandler function inside utils.js
+- [x] Create index.js inside posts folder
+- [x] Write queries in the index.js
+  - [ ] IMPORTANT: the file has some concise things that I must understand - `catch(errorHandler)`, `qry = { ... }[type || 'default']`
+  - [ ] Understand the 'knex' syntax
+  - [ ] Understand GraphQL used in the last query `getPostAuthors`
+- [x] Get rid of require(mocks) in the index.js inside schemas folder
 
 Next Step
 
+- [ ] Bring posts from reql api, not the mocks (fix index.js in the schemas folder)
 - [ ] Collect IP addresses of blog post readers and send the information via slack bot or something else
