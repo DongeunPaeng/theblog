@@ -22,14 +22,13 @@ module.exports = {
       .leftJoin(
         "blog_post_categories",
         "blog_posts.id",
-        "blog_posts_categories.post_id"
+        "blog_post_categories.post_id"
       )
       .leftJoin(
         "blog_categories",
         "blog_categories.id",
-        "blog_posts_categories.category_id"
+        "blog_post_categories.category_id"
       )
-      .where({ active: 1 })
       .groupBy("blog_posts.id");
 
     qry = {
@@ -50,14 +49,14 @@ module.exports = {
       recent: () => qry.orderBy("updated_at", "desc").limit(5),
 
       default: () => qry,
-    }[type || "default"];
+    }[type || "default"]();
 
     return qry
       .then((data) => {
         if (category_id) {
-          return data.filter((post) => {
-            post.cat_ids.split(",").includes(category_id);
-          });
+          return data.filter((post) =>
+            post.cat_ids.split(",").includes(category_id.toString())
+          );
         }
         return data;
       })
@@ -72,13 +71,13 @@ module.exports = {
       .groupBy("post_id")
       .catch(errorHandler),
 
-  getPostComments: async (id) =>
+  getPostsComments: async (id) =>
     await db
       .select("*")
       .from("blog_post_comments")
       .where("post_id", id)
       .catch(errorHandler),
 
-  getPostAuthors: async (ids) =>
+  getPostsAuthors: async (ids) =>
     await db.select("*").from("users").whereIn("id", ids).catch(errorHandler),
 };

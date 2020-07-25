@@ -1,5 +1,7 @@
 ## The Blog
 
+---
+
 #### Created by Dongeun Paeng
 
 The Blog project is my personal blog built with React.<br>
@@ -8,6 +10,23 @@ The whole process will evolve continuously.<br><br>
 
 I'll be building the website and learning React at the same time.<br>
 All the sources I refer to will be on my 'da Vinci' page.
+
+---
+
+#### What I've learned and used
+
+- React
+- React Hooks
+- Apollo
+- KoaJS
+- NodeJS
+- GraphQL
+- RESTful API
+- Knex
+- MySQL
+- Function Currying
+- Set, map, reduce
+- Sass
 
 ---
 
@@ -226,7 +245,18 @@ All the sources I refer to will be on my 'da Vinci' page.
   - [ ] Understand GraphQL used in the last query `getPostAuthors`
 - [x] Get rid of require(mocks) in the index.js inside schemas folder
 
-Next Step
+##### 2020. 07. 25.
 
-- [ ] Bring posts from reql api, not the mocks (fix index.js in the schemas folder)
+- [x] Delete mocks folder
+- [x] Modify posts-schema.graphql
+  - [ ] Understand what this modify posts-schema.graphql file does
+- [x] Modify index.js
+  - [ ] Understand every line
+  - [x] Understand Currying
+- [x] node app and check with GraphQL chrome extension
+
+---
+
+Remaining Tasks
+
 - [ ] Collect IP addresses of blog post readers and send the information via slack bot or something else
